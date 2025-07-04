@@ -52,7 +52,7 @@ export default function About(props) {
           </h2>
           <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div className="accordion-body">
-              Made with ❤️ by Narayan — a chill dev who vibes with clean UI, good UX, and functional code. Follow me on <a href="https://github.com/narayan4256k" target="_blank" rel="noopener noreferrer">GitHub</a> for more cool stuff.
+              Made with ❤️ by Narayan — a chill dev who vibes with clean UI, good UX, and functional code. Follow me on <a href="https://github.com/narayan4256k" target="_blank" rel="noopener noreferrer" style={{color: props.mode ==='dark' ? '#81f3b4':'rgb(255 0 0)', textDecoration:'none'}}>GitHub</a> for more cool stuff.
             </div>
           </div>
         </div>
