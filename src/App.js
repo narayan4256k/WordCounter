@@ -12,7 +12,7 @@ function App() {
   const toggleMode = () => {
     if (mode === 'light') {
       setMode('dark');
-      document.body.style.backgroundColor = '#002b5d';
+      document.body.style.backgroundColor = 'rgb(0 32 69)';
       showAlert("Dark mode has been enabled","success");
     } else {
       setMode('light');
@@ -37,7 +37,7 @@ function App() {
       <Alert alert={alert}/>
         <div className="container my-5">        
               <Routes>
-                <Route path="/about" element={<About />}/>	
+                <Route path="/about" element={<About mode={mode} />}/>	
                 <Route path="/" element={<TextForm showAlert={showAlert} heading="Enter your text" mode={mode}/>}/> 
               </Routes>               
         </div>  
